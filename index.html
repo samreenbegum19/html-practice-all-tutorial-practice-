@@ -1,30 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS</title>
+    <title>Css property</title>
     <style>
-        div,span{
-            color: rgb(231, 81, 22);
-            background-color: rgb(103, 234, 103);
+        * {
+            margin: 0;
+            padding: 0;
         }
-        p{
-            color: rgb(191, 58, 212);
-            background-color: rgb(65, 215, 215);
+
+        .box1 {
+            background-color: rgb(86, 25, 190);
+           position: absolute;
+            top: 44px;
+            left: 25px;
+            /* position: relative;/* position property comes across and for this position must be changed
+            with relative and you should use top ,left nomeans bottom ,right.*/
+            /*top: 44px;
+            left: 25px;*/
+
+        }
+
+        .box2 {
+            background-color: rgb(53, 190, 97);
+           /* position: sticky;
+            bottom: 22px;
+            top:0px;*/
+        }
+
+        .box3 {
+            background-color: burlywood;
+           /* position: absolute;
+            top: 4px;
+            right: 15px;*/
+
+        }
+
+        .box4 {
+            background-color: blueviolet;
+        }
+
+        .box {
+            width: 80vw;
+            height: 433px;
+            border: 2px solid black;
+            margin: 3px;
+            padding: 3px;
+
+
+        }
+
+        .parent {
+            margin: 44px;
+            padding: 54px;
+            border: 3px solid purple;
+           /* transform: translate(0);*/
+           /* filter: invert(0);*/
+            perspective: 0em;
+          /* position: absolute;
+            /* since no top,left,bottom and right is assigned now it checks it relatives element.
         }
     </style>
 </head>
+
 <body>
-    <div>
-    Today,i started my css learning from code with harry.
-    </div>
-    <div>
-        im learning about selectors.
-    </div>
-    <span>
-        html,css,javascript.
-    </span>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cum cupiditate ab nisi necessitatibus nobis unde. Fugiat quod error sunt quas? Magni ab cumque molestiae exercitationem enim similique accusamus facere. A sunt tenetur ullam debitis. Nobis, doloribus! Nesciunt, laborum consequatur velit itaque quas ea sit.</p>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+
 </body>
+
 </html>
