@@ -3,20 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css variables</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Css media query</title>
+    <style>
+        body{
+            background-color: rgb(204, 216, 38);
+        }
+        @media only screen and(max-width:150px) {
+            body{
+                background-color: rgb(67, 124, 9);
+            }
+            
+        }
+        .box{
+            background-color: rgb(115, 115, 180);
+            padding: 100px;
+            margin: 23px;
+            border: 3px solid red;
+            display: flex;
+
+        }
+    </style>
 </head>
 <body>
-    <div class="nav">
-        <ul>
-            <li>home</li>
-            <li>about</li>
-            <li>contact</li>
-        </ul>
+    <div>
+         css media query.
     </div>
-    <div class="container">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas rem ipsam sit veritatis excepturi itaque a, quibusdam natus delectus magni modi incidunt rerum possimus commodi soluta provident pariatur eligendi cupiditate, placeat similique aspernatur repellendus voluptatibus doloribus saepe! Voluptate ex quia ea fugit est provident illo.
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
     </div>
-    
 </body>
 </html>
